@@ -11,3 +11,7 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 boton.addEventListener("click", () => {
   // COMPLETAR
 });
+
+let precio;
+let sube_r;
+
