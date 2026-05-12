@@ -8,48 +8,45 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 12-27 km	  | $ 917.24		          | $ 1458.41
 */
 
+
 boton.addEventListener("click", () => {
-  // COMPLETAR
-});
-
-document.getElementById('distancia')
-
+  let registrad=registrada.value;
+let distance=distancia.value;
 let precio;
-let distancia;
-let sube_r;
-distancia=Math.min(Math.max(distancia,0), 27)
-'distancia'=== distancia
-
-let registrada;
-registrada===idregistrada
-
-if (registrada===true) {
-if (distancia < 3) {
-  precio===parseFloat("715.24")
-}
-else if (distancia > 2 && distancia < 6) {
-    precio===parseFloat("794.74")
-}
-else if (distancia >=6 && distacia < 12) {
-    precio===parseFloat("855.97")
-}
-else{
-    precio===parseFloat("917.24")
-}
-  }
-  else{
-    if (distancia < 3) {
-      precio===parseFloat("1137.23")
+  if (registrad==="si") {
+    if (distance< 3) {
+      precio=715.24
     }
-    else if (distancia > 2 && distancia < 6) {
-        precio===parseFloat("1263.64")
+    else if (distance < 6) {
+        precio=794.74
     }
-    else if (distancia >=6 && distacia < 12) {
-        precio===parseFloat("1360.99")
+    else if (distance < 12) {
+        precio=855.97
     }
     else{
-        precio===parseFloat("1458.41")
+        precio=917.24
     }
-  }
+      }
+      else{
+        
+        if (distance< 3) {
+          precio=1137.23
+        }
+        else if (distance < 6) {
+            precio=1263.64
+        }
+        else if (distance < 12) {
+            precio=1360.99
+        }
+        else{
+            precio=1458.41
+            
+        }
+      }
+      tarifa.innerText=precio;
+});
+
+
+
 
   
